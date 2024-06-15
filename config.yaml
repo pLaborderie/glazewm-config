@@ -118,6 +118,10 @@ window_rules:
   - command: "ignore"
     match_process_name: "/Taskmgr|ScreenClippingHost/"
 
+  # Ignore FFXIV
+  - command: "ignore"
+    match_process_name: "ffxiv_dx11"
+
   # Launches system dialogs as floating by default (eg. File Explorer save/open dialog).
   - command: "set floating"
     match_class_name: "#32770"
@@ -233,23 +237,23 @@ keybindings:
 
   # Change focus to a workspace defined in `workspaces` config.
   - command: "focus workspace 1"
-    binding: "Alt+1"
+    binding: "Alt+Ctrl+1"
   - command: "focus workspace 2"
-    binding: "Alt+2"
+    binding: "Alt+Ctrl+2"
   - command: "focus workspace 3"
-    binding: "Alt+3"
+    binding: "Alt+Ctrl+3"
   - command: "focus workspace 4"
-    binding: "Alt+4"
+    binding: "Alt+Ctrl+4"
   - command: "focus workspace 5"
-    binding: "Alt+5"
+    binding: "Alt+Ctrl+5"
   - command: "focus workspace 6"
-    binding: "Alt+6"
+    binding: "Alt+Ctrl+6"
   - command: "focus workspace 7"
-    binding: "Alt+7"
+    binding: "Alt+Ctrl+7"
   - command: "focus workspace 8"
-    binding: "Alt+8"
+    binding: "Alt+Ctrl+8"
   - command: "focus workspace 9"
-    binding: "Alt+9"
+    binding: "Alt+Ctrl+9"
 
   # Move focused workspace to a monitor in a given direction.
   - command: "move workspace left"
